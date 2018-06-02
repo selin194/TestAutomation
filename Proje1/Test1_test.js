@@ -14,9 +14,8 @@ Scenario('test1', (I) => {
 	I.seeElement('.logo');
 	//xPath
 	I.seeNumberOfElements('//*[@class="uiBox showcase"]/ul/li',56);
-	
 	I.see('Vasıta');
 	I.see('Otomobil');
 	I.see('Arazi, SUV & Pick-up');
-	I.see('Motosiklet')
+	I.see('Motosiklet');
 });
