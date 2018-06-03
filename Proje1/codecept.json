@@ -5,8 +5,17 @@
   "helpers": {
     "WebDriverIO": {
       "url": "http://www.sahibinden.com",
-      "browser": "chrome"
+     "browser": "chrome"
     }
+  },
+  "multiple": {
+  "basic": {
+    "browsers": ["chrome",  {"browser": "firefox", "windowSize": "maximize"}]
+  },
+  "parallel": {
+    "chunks": 2,
+    "browsers": ["chrome"]
+  }
   },
   "include": {
     "I": "./steps_file.js"

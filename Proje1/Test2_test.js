@@ -6,9 +6,9 @@ Scenario('test2', (I) => {
 	 I.click('Detaylı Arama');
 	 I.click('Vasıta','//*[@href="/arama/detayli?category=3517"]');
 	 I.click('Motosiklet','//*[@href="/arama/detayli?category=3532"]');
-	 I.moveCursorTo('//*[@href="/arama/detayli?category=11757"]');
+	 I.moveCursorTo('//*[@href="/arama/detayli?category=11757"]',400,-1300);
 	 I.click('Yamaha','//*[@href="/arama/detayli?category=11757"]');
-	 I.moveCursorTo('//*[@href="/arama/detayli?category=221415"]');
+	 I.moveCursorTo('//*[@href="/arama/detayli?category=221415"]',270,-300);
 	 I.click('MT-07 ABS','//*[@href="/arama/detayli?category=221415"]');
 	 I.fillField('Min Yıl', '1998');
 	 I.fillField('Max Yıl', '1999');

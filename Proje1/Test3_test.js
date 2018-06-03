@@ -1,9 +1,9 @@
 Feature('Test3');
 
 let inputs = new DataTable(['name','value']); 
-inputs.add(['Yamaha MT07','61']);
-inputs.add(['Yamaha MT09','25']);
-inputs.add(['Yamaha MT25','73']);
+inputs.add(['Yamaha MT07','64']);
+//inputs.add(['Yamaha MT09','25']);
+//inputs.add(['Yamaha MT25','73']);
 
 Data(inputs).Scenario('test3', async (I,current) => {
 	 I.amOnPage('/');
