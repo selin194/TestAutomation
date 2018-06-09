@@ -34,9 +34,7 @@ it('Test1', function () {
 		var results = restResponse["result"];
 		let isSortedByName = false;
 		for(i=1;i<results.length;++i)
-		{
-			console.log(results[i].name.charCodeAt(0));
-		
+		{		
 			results[i].name = results[i].name.toUpperCase();
 			results[i-1].name = results[i-1].name.toUpperCase();
 			
