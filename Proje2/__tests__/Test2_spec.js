@@ -1,5 +1,6 @@
 const frisby = require('C:/Users/User/AppData/Roaming/npm/node_modules/frisby');
 const Joi = frisby.Joi;
+var assert = require("assert");
 
 it('Test2', function () {
   return frisby.get('http://services.groupkt.com/state/get/USA/all')
