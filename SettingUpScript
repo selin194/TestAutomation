@@ -1,0 +1,8 @@
+#!/bin/bash
+npm install
+npm install -g codeceptjs
+codeceptjs init
+npm -g install  webdriverio@^4.0.0
+npm install -g selenium-standalone
+selenium-standalone install
+
