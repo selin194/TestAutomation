@@ -1,26 +1,38 @@
 {
-  "tests": "./*_test.js",
-  "timeout": 10000,
   "output": "./output",
   "helpers": {
     "WebDriverIO": {
       "url": "http://www.sahibinden.com",
-     "browser": "chrome"
+      "browser": "chrome"
     }
   },
-  "multiple": {
-  "basic": {
-    "browsers": ["chrome",  {"browser": "firefox", "windowSize": "maximize"}]
-  },
-  "parallel": {
-    "chunks": 2,
-    "browsers": ["chrome"]
-  }
-  },
   "include": {
-    "I": "./steps_file.js"
+    "I": "./steps_file.js",
+    "detailedSearchPage": "./pages/DetailedSearch.js",
+    "searchPage": "./pages/Search.js"
   },
-  "bootstrap": false,
   "mocha": {},
+  "bootstrap": false,
+  "teardown": null,
+  "hooks": [],
+  "tests": "./*_test.js",
+  "timeout": 10000,
+  "multiple": {
+    "basic": {
+      "browsers": [
+        "chrome",
+        {
+          "browser": "firefox",
+          "windowSize": "maximize"
+        }
+      ]
+    },
+    "parallel": {
+      "chunks": 2,
+      "browsers": [
+        "chrome"
+      ]
+    }
+  },
   "name": "CodeceptJs"
 }
