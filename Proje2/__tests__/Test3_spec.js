@@ -1,4 +1,4 @@
-const frisby = require('C:/Users/User/AppData/Roaming/npm/node_modules/frisby');
+const frisby = require('frisby');
 
 let readAlpha3_code;
 
