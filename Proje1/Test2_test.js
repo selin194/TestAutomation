@@ -1,6 +1,9 @@
 
 Feature('Test2');
 
+//Belirtilen özelliklere uygun değerlerin girilmesiyle
+//aranılan  özelliklere uygun motosiklet bulunmadığını kotrol eder.
+//detailedSearchPage page objecti kullanılmıştır.
 Scenario('test2', (I,detailedSearchPage) => {
 	 I.amOnPage('/');
 	 I.click('Detaylı Arama');

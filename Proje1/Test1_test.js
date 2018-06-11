@@ -1,6 +1,9 @@
 
 Feature('Test1');
 
+//sahibinden.com sitesinin anasayfasında belirtilen özelliklerin
+//var olduğunun doğrulanmasıyla anasayfanın doğru bir şekilde
+//yüklenip yüklenmediğini kontrol eder.
 Scenario('test1', (I) => {
 	 I.amOnPage('/');
 	I.see('Giriş Yap');
